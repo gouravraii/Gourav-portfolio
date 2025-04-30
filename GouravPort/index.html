@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bba1227285.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="photo/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Software developer</p>
+            <h1>Hi,I'm <span>Gourav</span><br> Rai From India</h1>
+        </div>
+
+    </div>
+</div>
+<!--------------- about ---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="photo/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a dedicated and results-driven Computer Science and Engineering student specializing in Data Science at Lovely Professional University. With expertise in programming languages like Java, C++, Python, C, C#, HTML, and JavaScript, I have developed and deployed multiple projects, including web applications and data-driven dashboards.
+
+                    My technical proficiency extends to data analytics and visualization tools such as Tableau, Power BI, Excel, and SQL, along with ETL tools like Informatica PowerCenter. I have worked on various data-centric projects, such as customer shopping data analysis, HR analytics, and retention campaign performance analysis, leveraging machine learning techniques for predictive insights.
+                    
+                    Passionate about problem-solving and software development, I have successfully built a Comprehensive User Behavior Tracking System and designed a Task Management System in C++ utilizing data structures and algorithms. Additionally, I am continuously enhancing my skills through courses like Google Data Analytics and Big Data.
+                    
+                    I am eager to apply my analytical skills, software development expertise, and data-driven approach to solve complex business problems and drive impactful decision-making.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Development</span><br>Designing and developing web interfaces</li>
+                        <li><span>App Development</span><br>Creating intuitive and user-friendly app interfaces</li>
+                        <li><span>Data analyst</span><br>Organizing, processing, and visualizing data for insights</data></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Frontend Developer</span><br>2 years of experience in web development, designing interactive and responsive UI/UX using HTML, CSS and JavaScript</li>
+                        <li><span>ETL Developer (Self-Learning) </span><br>Hands-on experience in data extraction, transformation, and loading (ETL) using Informatica PowerCenter, handling structured datasets.</li>
+                        <li><span>Data analyst</span><br> years of experience in data preprocessing, visualization, and analysis using SQL, Excel, Tableau, and Power BI, with projects on customer behavior, HR analytics, and retention analysis.</data></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-current</span><br>B.Tech Cse From Lovely Professional University</li>
+                        <li><span>2020-2021</span><br>12th From St.Joshep School</li>
+                        <li><span>2018-2019</span><br>10th From St.Aloysius School</data></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------services------------------>
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I have a strong background in web design and front-end development, creating visually appealing, fully responsive, and interactive websites. My expertise includes HTML, CSS, JavaScript, and frameworks like Bootstrap and Tailwind CSS, along with CSS animations to enhance user experience. I focus on designing intuitive and engaging interfaces while ensuring cross-device compatibility for seamless performance. Additionally, I have experience in website deployment and domain management, successfully launching websites on platforms like Netlify.</p>
+                <a href="https://github.com/gouravraii/Gate2024">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Machine Learning & Predictive Analytics</h2>
+                <p>I specialize in Machine Learning & Predictive Analytics, leveraging advanced algorithms to extract insights from data and drive informed decision-making. My expertise includes supervised and unsupervised learning, predictive modeling, and statistical analysis using Python, and R. I have worked on projects involving customer behavior analysis, HR retention analysis, and sales forecasting, applying techniques such as regression, classification, clustering, and time series forecasting.</p>
+                <a href="https://github.com/gouravraii/Predictive-ML">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Data analyst</h2>
+                <p>I am a detail-oriented data analyst with expertise in transforming raw data into meaningful insights to drive informed decision-making. My proficiency in tools like SQL, Excel, Tableau, and Power BI, along with programming languages such as Python and R, allows me to perform data cleaning, visualization, and predictive analysis. I have worked on projects involving customer shopping data analysis, HR analytics, and retention campaign performance analysis, utilizing machine learning models and statistical techniques to uncover trends and patterns. </p>
+                <a href="https://github.com/gouravraii/SalesDashboard">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ---------------------portfolio----------------- -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photo/work-1.png">
+                <div class="layer">
+                    <h3>Electricity Bill Genetor</h3>
+                    <p>I developed an Electricity Bill Generator using Java, designed to automate the calculation and generation of electricity bills based on user consumption. The system takes inputs such as customer details, units consumed, and applicable tariff rates to compute the total bill efficiently. It incorporates a structured approach using object-oriented programming (OOP) principles, ensuring scalability and maintainability. The application includes features like dynamic rate adjustments, bill breakdown display, and file export options for record-keeping. By implementing Java concepts such as exception handling, file handling, and GUI (if applicable).</p>
+                    <a href="https://github.com/gouravraii/Electricitybillgenerator.java"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photo/work-2.png">
+                <div class="layer">
+                    <h3>Gate Question Website</h3>
+                    <p>I developed a GATE Question Practice Website using HTML, CSS, and JavaScript, designed to help students prepare for the GATE 2024 exam. The platform provides an interactive and user-friendly interface where users can access and practice a variety of questions. With a fully responsive design, the website ensures seamless accessibility across different devices. JavaScript functionalities enable dynamic question rendering, validation, and result tracking, enhancing the learning experience. CSS animations and styling improve user engagement. The website is successfully deployed on Netlify with proper domain management.</p>
+                    <a href="https://github.com/gouravraii/Gate2024"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photo/work-3.png">
+                <div class="layer">
+                    <h3>Sales Dashboard</h3>
+                    <p>I designed a Sales  Dashboard using Tableau to provide insightful visualizations and analytics for business performance evaluation. The dashboard integrates key metrics such as total sales, revenue trends, regional performance, product-wise sales distribution, and customer demographics to help businesses make data-driven decisions. Interactive filters and drill-down functionalities enable users to analyze sales data across different time periods and categories. By leveraging Tableau’s advanced visualization techniques, I presented complex datasets in an intuitive and user-friendly manner, allowing stakeholders to identify.</p>
+                    <a href="https://github.com/gouravraii/SalesDashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/gouravraii" class="btn">See more</a>
+    </div>
+  </div>
+  <!-- --------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>   
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>    
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/gouravraii"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/Uiknhb78"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=1r2a82pb15fx2&utm_content=nry8u78"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gourav-rai-a3509a244/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>   
+                <a href="photo/my cvv.pdf" download class="btn btn2" >Download CV</a>  
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+            <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Gourav Rai.Made with <i class="fa-solid fa-heart"></i> by simple Thinks</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0e5dzdC39Pd9YJIqk1W2BVPiO4mPoBUh2cArrzkfD0BZs8l-OfvBgJiuuGfZuqwwvEw/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {  // Corrected 'addEvaentListener' to 'addEventListener'
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 3000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+
+    
+</body>
+</html>
